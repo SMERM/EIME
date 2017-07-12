@@ -5,6 +5,9 @@
 			   a4paper,
 			   twoside
 			   ]{book}
+
+\usepackage[T1]{fontenc}
+
 \usepackage[margin=1in]{geometry}
 
 \usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
@@ -22,6 +25,9 @@
 
 \usepackage{multicol}
 \usepackage{pdfpages}
+
+\usepackage{tikz}
+\usepackage{color}
 
 %-------------------------------------------------------------
 %----------------------------------------------------- FONTS -
@@ -129,17 +135,24 @@
 \frameattext{white}{black}{2pt}
 
 \begin{center}
-	~\\
+	~
 	\vfill
-    \fontsize{19}{19}\selectfont{Giuseppe SILVI} \\
-		\vspace{1cm}
-    \fontsize{81}{54}\selectfont{EIME \#01} \\
+	
+    \fontsize{19}{19}\selectfont{Giuseppe SILVI}
+    	\vspace{.3in}
+		\noindent\makebox[\linewidth]{\rule{.3\paperwidth}{1pt}}
+	\fontsize{51}{51}\selectfont{\emph{l'invito all'ascolto}} \\
+		\vfill %\vspace{1in}	
+		~
+		\vfill
+		
+    \fontsize{19}{19}\selectfont{COME/01 \\ esecuzione ed interpretazione della \\musica elettroacustica \\ 2016/2017} \\
+							     
+		\vfill
+	\fontsize{19}{19}\selectfont{draft 002\\ \today}
+	
 	\vfill
-	\fontsize{19}{10}\selectfont{\emph{un invito all'ascolto}} \\
-		\vspace{1cm}
-	\fontsize{19}{19}\selectfont{draft 001\\
-								 \today}
-	\vfill
+	~
 
 \end{center}
 %\maketitle
@@ -166,152 +179,29 @@
 %
 %
 \clearpage
+\thispagestyle{empty}
 
-%-------------------------------------------------------------
-%----------------------------------------------- DESCRIPTION -
-%-------------------------------------------------------------
+Conservatorio di Musica S. Cecilia di Roma \\
+DIPARTIMENTO DI MUSICA ELETTRONICA \\
+Esecuzione ed Interpretazione della Musica Elettronica - COME/01 \\
+Anno accademico 2016/2017
+\vfill
 
-%\chapter*{Abstract}
-%\noindent\makebox[\linewidth]{\rule{\paperwidth}{9pt}}
-%\addcontentsline{toc}{chapter}{Abstract}
+inserire licenza uso
 
-\chapter*{John Cage. \emph{Cartridge Music}.}
+\clearpage
 
-	\begin{flushright}
-		\textit{Nella nostra anima c'è una incrinatura che, se sfiorata, \\
-		risuona come un vaso prezioso riemerso dalle profondità della terra} \\
-		Wassilly Kandinsky - \emph{Lo Spirituale nell'Arte}
-	\end{flushright}
+\tableofcontents
 
-	\begin{flushright}
-		\textit{Music of Changes // John ChAnGEs} \\
-		Pierre Boulez
-	\end{flushright}
+\clearpage
 
-	\begin{flushright}
-		\textit{Si dice che i compositori abbiano orecchio per la musica e \\
-		di solito significa che non sentono nulla che arrivi alle loro orecchie. \\
-		Le loro orecchie sono murate dai suoni di loro creazione.} \\
-		John Cage - \emph{45' for a Speaker} (1954)
-	\end{flushright}
+\input{capitoli/1960-CAGE-CARTRIDGE-MUSIC.tex}
 
-\bigskip
+\input{capitoli/1970-STOCKHAUSEN-MANTRA.tex}
 
-\begin{multicols}{2}
+\input{capitoli/1998-2002-LUCIER-WAVES-SONG.tex}
 
-\begin{quote}
-	Ogni opera d'arte è figlia del suo tempo, e spesso è madre dei nostri
-	sentimenti.
-
-Analogamente, ogni periodo culturale esprime una sua arte, che non si ripeterà
-mai più.
-Lo stesso sforzo di ridar vita a principi estetici del passato può creare al
-massimo delle opere d'arte che sembrano bambini nati morti.
-Noi non possiamo, ad esempio, avere la sensibilità e la vita
-interiore\footnote{Wassilly Kandinsky, \emph{Lo Spirituale nell'Arte},
-SE. 1989}\ldots
-\end{quote}
-
-di John Cage, in luogo degli antichi Greci, come avrebbe continuato Kandinsky.
-Ci deve essere un certo grado di consapevolezza in relazione al livello di
-comprensione-incomprensione del pensiero di John Cage. Ma ammettendo di
-averlo compreso, per quanto noi potremmo approfondire lo studio del suo
-pensiero e della sua musica, potremmo solo arrivare ad imitarne alcuni tratti
-stilistici. E se tentassimo di
-
-\begin{quote}
-adottare i loro princìpi, non faremmo che produrre forme simili alle loro,
-ma prive di anima\footnote{\emph{idem}}.
-\end{quote}
-
-Questo non esclude che si possa riuscire ad entrare in contatto con le
-motivazioni e gli stimoli artistici, soprattutto se si attinge ai tratti
-condivisi tra le somiglianze delle forme artistiche,
-
-\begin{quote}
-delle aspirazioni interiori e degli ideali (che un tempo erano stati raggiunti
-e poi vennero dimenticati), la somiglianza cioè fra i climi culturali di due
-epoche che può portare alla ripresa di forme che erano già state utilizzate in
-passato per esprimere le stesse tensioni\footnote{\emph{idem}}.
-\end{quote}
-
-Tra le caratteristiche non convenzionali di John Cage ce n'è per me una piuttosto
-curiosa: davanti ad una mastodontica produzione musicale, ad una quasi totale
-assenza di apparato critico strutturato, non è difficile individuare gli
-\emph{stili musicali} di John Cage, dividendoli in quattro sezioni temporali
-scandite da date piuttosto precise: 1939, 1951, 1969.
-
-Le prime opere sono caratterizzate da un cromatismo strutturato e dalla
-sperimentazione soprattutto con gli strumenti a percussione.
-Con \emph{Firts Construction in Metal} del 1939 realizza la prima opera
-utilizzando strutture temporali. Nel 1951 con \emph{Music of Changes} e
-\emph{Imaginary Landscape No. 4} si compie il passaggio dall'organizzazione
-sistematica alla combinazione di elementi sistematici, gusti personali e
-indeterminazione casuale. Gli anni che seguirono il 1951 furono decisivi per
-lo sviluppo delle operazioni casuali.
-
-È dal 1957 che Cage inizò a concepire opere nelle quali tutti gli aspetti
-dell'interpretazione fossero indeterminati. Tutte le decisioni in merito ai
-suoni e alla loro successione sono delegate dal compositore all'esecutore;
-la partitura permette soltanto di assicurare una certa disciplina quanto al
-modo di porendere devisioni che produrranno dei risultati imprevedibili. In quegli
-anni \emph{Fontana Mix, Cartridge Music}\footnote{\emph{Cartridge
-Music} at John Cage's Database of Works www.johncage.org: \\ This work was later used as music for the choreographed piece by Merce Cunningham
-entitled Changing Steps, with stage and costume design by Charles Atlas (from 1973,
-Mark Lancaster); still later, it was used for the choreographed pieces by
-Cunningham entitled Exercise Piece II and Exercise Piece III.
-The word 'Cartridge' in the title refers to the cartridge of phonographic
-pick-ups, into the aperture of which is fitted a needle. In Cartridge Music,
-the performer is instructed to insert all manner of unspecified small objects
-into the cartridge; prior performances have involved such items as pipe cleaners,
-matches, feathers, wires, etc. Furniture may be used as well, amplified via
-contact microphones. All sounds are to be amplified and are controlled by the
-performer(s). The number of performers should be at least that of the cartridges,
-but not greater than twice the number of cartridges. Each performer makes his or
-her own part from the materials provided: 20 numbered sheets with irregular
-shapes (the number of shapes corresponding to the number of the sheet) and 4
-transparencies, one with points, one with circles, another with a circle marked
-like a stopwatch, and the last with a dotted curving line, with a circle at one
-end. These transparencies are to be superimposed on one of the 20 sheets, in
-order to create a constellation from which one creates one's part. It is also
-possible to create other pieces from these materials, such as Duet for Cymbal
-or a Piano Duet. Cage also used Cartridge Music as a means to compose several
-of his lectures, including “Where Are We Going? And What Are We Doing?” (1960),
-“Rhythm, Etc.” (1962), “Jasper Johns: Stories and Ideas” (1963), and
-“On Robert Rauschenberg, Artist, and His Work” (1961).} e la serie delle \emph{Variations},
-consisteva in fogli lucidi trasparenti, con linee, punti e curve, a partire dalle
-quali si costruivano partiture (strutture, materiali e relazioni, applicabili non
-solo alla musica) che era possibile eseguire in diverse circostanze.
-
-La regolarità e la continuità estetica di questa produzione fu interrotta nel 1969
-con il brano \emph{HPSCHD} per sette clavicembali amplificati e tape multicanale.
-La musica di Cage ri riappropria quindi di una notazione convenzionale in uninione
-con la tecnicna del \emph{collage}. L'anno successivo Cage porse le prime domande
-di composizione all'\emph{I Ching}.
-
-\begin{quote}
-	I procedimenti casuali sono solo uno strumento tra altri che Cage ha utilizzato
-	per perseguire coerentemente un unico scopo: l'accettazione disciplinata, in
-	contesti musicali, di ciò che fino ad allora era stato rifiutato. «Sono sempre
-	stato dalla parte delle cose che non si devono fare», ha osservato una volta,
-	«cercando il modo di rimettere in gioco gli elementi rifiutati»\footnote{William
-	Brooks, \emph{Scelte e Cambiamenti Nella Musica Recente di Cage} 1982}.
-\end{quote}
-
-\centering{***}
-
-\begin{quote}
-	L'artista cercherà di suscitare sentimenti più delicati, senza nome [\ldots]
-	Attualmente però lo spettatore è quasi sempre incapace di emozioni.
-	Nell'opera d'arte cerca una mera imitazione della natura a scopo pratico.
-	[\ldots] certo l'immedesimazione (e la contrapposizione) non deve essere
-	vacua o superficiale: anzi, l'atmosfera dell'opera deve rendere più
-	coinvolgente e visionaria l'atmosfera in cui è immerso lo spettatore. [\ldots]
-	L'affinamento e la diffusione della loro voce nel tempo e nello spazio
-	rimangono però un fatto soggettivo, che non esaurisce le potenzialità dell'arte.
-\end{quote}
-
-\end{multicols}
+\input{capitoli/2003-DISCIPIO-AUDIBLE-ECO2.tex}
 
 %\begin{figure}[htbp]
 %\begin{center}
