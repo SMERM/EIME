@@ -46,7 +46,8 @@ drumDrumsI = \drummode {
   \set Score.markFormatter = #format-mark-numbers
   \set Score.currentBarNumber = #0
   
-  \repeat unfold 3 {s1 s1 s1 s1 s1 \break}
+  s1 s1 s1 s1 s1 \break
+  s1 s1 s1 s1 s1 s1
   
 }
 
@@ -54,11 +55,8 @@ drumsIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "ENV IV"
   shortInstrumentName = "IV"
-  drumStyleTable = #bongos-style
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -67,9 +65,9 @@ drumsIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "ENV III"
   shortInstrumentName = "III"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
@@ -80,9 +78,9 @@ drumsIIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "L"
   shortInstrumentName = "L"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
@@ -93,9 +91,9 @@ drumsIVPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "I"
   shortInstrumentName = "I"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
@@ -106,9 +104,9 @@ drumsVPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "H"
   shortInstrumentName = "H"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
@@ -119,9 +117,9 @@ drumsVIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "G"
   shortInstrumentName = "G"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
@@ -132,37 +130,83 @@ drumsVIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "F"
   shortInstrumentName = "F"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
 
-drumsVIIIPart = \new DrumStaff \with {
+drumsVIIIParta = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "MIX"
   shortInstrumentName = "MIX"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
+  \override StaffSymbol.staff-space = #5
+
+  \remove "Time_signature_engraver"
+  \remove "Clef_engraver"
+} \drumDrumsI
+
+drumsVIIIPartb = \new DrumStaff \with {
+  \consists "Instrument_name_engraver"
+  instrumentName = "MIX"
+  shortInstrumentName = "MIX"
+
+  \override StaffSymbol #'line-count = #2
+  \override StaffSymbol.staff-space = #5
   \override Stem #'stencil = ##f
   \override Stem #'length = #3  % keep some distance.
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
 
-drumsVIIIaPart = \new DrumStaff \with {
+drumsVIIIaParta = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "TONE"
   shortInstrumentName = "TONE"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
+  \remove "Time_signature_engraver"
+  \remove "Clef_engraver"
+} \drumDrumsI
+
+drumsVIIIaPartb = \new DrumStaff \with {
+  \consists "Instrument_name_engraver"
+  instrumentName = "TONE"
+  shortInstrumentName = "TONE"
+
+  \override StaffSymbol #'line-count = #2
+  \override StaffSymbol.staff-space = #5
+
+  \remove "Time_signature_engraver"
+  \remove "Clef_engraver"
+} \drumDrumsI
+
+drumsVIIIaPartc = \new DrumStaff \with {
+  \consists "Instrument_name_engraver"
+  instrumentName = "TONE"
+  shortInstrumentName = "TONE"
+
+  \override StaffSymbol #'line-count = #2
+  \override StaffSymbol.staff-space = #5
+
+  \remove "Time_signature_engraver"
+  \remove "Clef_engraver"
+} \drumDrumsI
+
+drumsVIIIaPartd = \new DrumStaff \with {
+  \consists "Instrument_name_engraver"
+  instrumentName = "TONE"
+  shortInstrumentName = "TONE"
+
+  \override StaffSymbol #'line-count = #2
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -171,11 +215,10 @@ drumsIXPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "E"
   shortInstrumentName = "E"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -184,11 +227,10 @@ drumsXPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "D"
   shortInstrumentName = "D"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -197,11 +239,10 @@ drumsXIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "C"
   shortInstrumentName = "C"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -210,11 +251,10 @@ drumsXIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "B"
   shortInstrumentName = "B"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -223,11 +263,10 @@ drumsXIIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "A"
   shortInstrumentName = "A"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+  
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -236,11 +275,10 @@ drumsXIVPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "ENV II"
   shortInstrumentName = "II"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -249,11 +287,10 @@ drumsXVPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "ENV I"
   shortInstrumentName = "I"
-  drumStyleTable = #bongos-style
+
   \override StaffSymbol #'line-count = #2
-  \override StaffSymbol.staff-space = #7
-  \override Stem #'stencil = ##f
-  \override Stem #'length = #3  % keep some distance.
+  \override StaffSymbol.staff-space = #5
+
   \remove "Time_signature_engraver"
   \remove "Clef_engraver"
 } \drumDrumsI
@@ -267,8 +304,14 @@ drumsXVPart = \new DrumStaff \with {
     \drumsVPart
     \drumsVIPart
     \drumsVIIPart
-    \drumsVIIIPart
-    \drumsVIIIaPart
+
+    \drumsVIIIParta
+    \drumsVIIIPartb
+    \drumsVIIIaParta
+    \drumsVIIIaPartb
+    \drumsVIIIaPartc
+    \drumsVIIIaPartd
+    
     \drumsIXPart
     \drumsXPart
     \drumsXIPart
@@ -277,11 +320,5 @@ drumsXVPart = \new DrumStaff \with {
     \drumsXIVPart
     \drumsXVPart
   >>
-  \layout {
-    indent = 0.0\cm
-  \context {
-    \Score
-    \override StaffGrouper.staff-staff-spacing.padding = #0
-    \override StaffGrouper.staff-staff-spacing.basic-distance = #7
-  }}
+  \layout {}
 }
