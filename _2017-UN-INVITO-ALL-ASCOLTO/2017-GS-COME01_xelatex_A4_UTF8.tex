@@ -28,6 +28,7 @@
 
 \usepackage{tikz}
 \usepackage{color}
+\usepackage{lipsum}
 
 %-------------------------------------------------------------
 %----------------------------------------------------- FONTS -
@@ -175,7 +176,7 @@
 %\emph{A. Sax.} by Giuseppe Silvi is licensed under a Creative Commons \\
 %Attribution-NonCommercial-ShareAlike 4.0 International License.\\
 %Permissions beyond the scope of this license may be available at\\
-%giuseppesilvi.com/asax.%\marginpar{prova}
+%giuseppesilvi.com/asax.%\marginpar{prova} 
 %
 %
 \clearpage
@@ -195,13 +196,55 @@ inserire licenza uso
 
 \clearpage
 
+\thispagestyle{empty}
+
+\includepdf[scale=1.05,
+		    pagecommand={
+		    	\begin{tikzpicture}[
+					remember picture,
+					overlay]
+		    	\node [xshift=2cm,yshift=1cm] at (current page.south west) {\color{white}{\emph{Roberto \textbf{Masotti}}}};
+				\end{tikzpicture}}
+		    ]{masotti/cage.pdf}
+		    
 \input{capitoli/1960-CAGE-CARTRIDGE-MUSIC.tex}
 
+\clearpage
+
+\thispagestyle{empty}
+
+\includepdf[scale=1.03,
+		    pagecommand={
+		    	\begin{tikzpicture}[
+					remember picture,
+					overlay]
+		    	\node [xshift=2cm,yshift=1cm] at (current page.south west) {\color{white}{\emph{Heinz \textbf{Karnine}}}};
+				\end{tikzpicture}}
+		    ]{stockhausen/stockhausen.pdf}
+		    
 \input{capitoli/1970-STOCKHAUSEN-MANTRA.tex}
+
+\includepdf[scale=1.1]{lucier/lucier_road_cc.pdf}
 
 \input{capitoli/1998-2002-LUCIER-WAVES-SONG.tex}
 
+\clearpage
+
+\thispagestyle{empty}
+
+\includepdf[offset=80 0,
+			scale=2.2,
+		    pagecommand={
+		    	\begin{tikzpicture}[
+					remember picture,
+					overlay]
+		    	\node [xshift=2cm,yshift=1cm] at (current page.south west) {\color{white}{\emph{Kai \textbf{Bienart}}}};
+				\end{tikzpicture}}
+		    ]{discipio/SCIP030BN.pdf}
+		    
 \input{capitoli/2003-DISCIPIO-AUDIBLE-ECO2.tex}
+
+\includepdf[rotate=90]{_timeline/cosmologia.pdf}
 
 %\begin{figure}[htbp]
 %\begin{center}
