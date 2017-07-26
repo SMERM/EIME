@@ -2,13 +2,13 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[%10pt,
-			   a4paper,
+			   a3paper,
 			   twoside
 			   ]{book}
 
 \usepackage[T1]{fontenc}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.23in]{geometry}
 
 \usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}
@@ -22,6 +22,11 @@
 \usepackage{multirow}
 
 \usepackage{url}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{citecolor=black}
+\hypersetup{linkcolor=black}
+\hypersetup{urlcolor=black}
+\usepackage{cleveref}
 
 \usepackage{multicol}
 \usepackage{pdfpages}
@@ -188,13 +193,48 @@ Esecuzione ed Interpretazione della Musica Elettronica - COME/01 \\
 Anno accademico 2016/2017
 \vfill
 
-inserire licenza uso
+Attribution 4.0 International (CC BY 4.0)
+
+You are free to:
+\begin{description}
+	\item[Share] - copy and redistribute the material in any medium or format
+	\item[Adapt] - remix, transform, and build upon the material for any purpose, even commercially.
+\end{description}
+
+Under the following terms:
+\begin{description}
+	\item[Attribution] — You must give appropriate credit, provide a link to the license, and indicate if
+	changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor
+	endorses you or your use.
+	\item[No additional restrictions] — You may not apply legal terms or technological measures that legally
+	restrict others from doing anything the license permits.
+\end{description}
+
+Notices:\\
+You do not have to comply with the license for elements of the material in the public domain or where your
+use is permitted by an applicable exception or limitation. No warranties are given. The license may not give
+you all of the permissions necessary for your intended use. For example, other rights such as publicity,
+privacy, or moral rights may limit how you use the material.
 
 \clearpage
 
 \tableofcontents
+\thispagestyle{empty}
 
 \clearpage
+
+~
+\thispagestyle{empty}
+
+\clearpage
+
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+
+\lipsum[1-10]
+
+\clearpage
+
 
 \thispagestyle{empty}
 
@@ -206,8 +246,14 @@ inserire licenza uso
 		    	\node [xshift=2cm,yshift=1cm] at (current page.south west) {\color{white}{\emph{Roberto \textbf{Masotti}}}};
 				\end{tikzpicture}}
 		    ]{masotti/cage.pdf}
+
+\clearpage
 		    
 \input{capitoli/1960-CAGE-CARTRIDGE-MUSIC.tex}
+
+\clearpage
+
+~
 
 \clearpage
 
