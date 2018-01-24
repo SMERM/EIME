@@ -1,0 +1,3 @@
+[submodule "invito-ascolto"]
+	path = invito-ascolto
+	url = https://github.com/grammaton/invito-ascolto.git
