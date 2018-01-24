@@ -297,6 +297,7 @@ drumsXVPart = \new DrumStaff \with {
 
 \score {
   \new StaffGroup <<
+    \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #20
     \drumsIPart
     \drumsIIPart
     \drumsIIIPart
