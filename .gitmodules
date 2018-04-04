@@ -1,6 +1,3 @@
 [submodule "invito-ascolto"]
 	path = invito-ascolto
 	url = https://github.com/grammaton/invito-ascolto.git
-[submodule "1956-STOKHAUSEN-STUDIE-II/xaudia-vintage_mic"]
-	path = 1956-STOKHAUSEN-STUDIE-II/xaudia-vintage_mic
-	url = https://github.com/Edd95/xaudia-vintage_mic.git
