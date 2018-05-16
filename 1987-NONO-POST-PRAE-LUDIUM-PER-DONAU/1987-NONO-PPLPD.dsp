@@ -59,12 +59,18 @@ PGM1 = hgroup("[3] PGM1", _ : jcrev : pgm1LF, pgm1RF, pgm1LB, pgm1RB);
 
 phasing = pf.phaser2_mono(13,.707,500,1000,2,1500,1,1,0,0);
 
+rot1 = os.phasor(1024,0.16) : _;
+rot2 = os.phasor(1024,-0.23) : _;
+
 pgm2LF = hgroup("LF", fader : vmeter);
 pgm2RF = hgroup("RF", fader : vmeter);
 pgm2LB = hgroup("LB", fader : vmeter);
 pgm2RB = hgroup("RB", fader : vmeter);
 
-PGM2 = hgroup("[4] PGM2", _ : phasing <: vgroup("HALAFON", sp.spat(4, vslider("Rotation 1 [unit:vel] [style:knob]", .1, -1, 1, 0.01), 1), sp.spat(4, vslider("Rotation 2 [unit:vel] [style:knob]", -.2, -1, 1, 0.01), 1)) :> pgm2LF, pgm2RF, pgm2LB, pgm2RB);
+PGM2 = hgroup("[4] PGM2", _ : phasing <:
+       vgroup("HALAFON", sp.spat(4, rot1, 1),
+                         sp.spat(4, rot2, 1)) :>
+                         pgm2LF, pgm2RF, pgm2LB, pgm2RB);
 
 //-------------------------------------------------
 // PGM3 + PGM4
