@@ -1,3 +1,6 @@
 [submodule "invito-ascolto"]
 	path = invito-ascolto
 	url = https://github.com/grammaton/invito-ascolto.git
+[submodule "1968-LUCIER-A-IM-SITTING/fc1969alis"]
+	path = 1968-LUCIER-A-IM-SITTING/fc1969alis
+	url = https://github.com/s-e-a-m/fc1969alis.git
